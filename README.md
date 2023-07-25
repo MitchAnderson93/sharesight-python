@@ -1,5 +1,11 @@
 # Commands:
 
+## Setup:
+```python
+source env/bin/activate
+pip install -r requirements.txt
+```
+
 ## List all:
 ```python
 (env): $ python script.py list-portfolios
