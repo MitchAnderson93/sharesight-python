@@ -15,7 +15,7 @@ Your Portfolios:
 
 Output:
 Holdings in the selected portfolio:
-- New Hope Corporation (Symbol: NHC) (ID: 19201377)
+- New Hope Corporation (NHC.AX - ID: 19201377)
 ```
 ## Delete:
 ```python
