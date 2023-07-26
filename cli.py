@@ -4,6 +4,9 @@ import click
 from dotenv import load_dotenv
 load_dotenv()
 
+# Custom tools that expand ontop of this 
+import tools
+
 # Sharesight API endpoint
 API_BASE_URL = "https://api.sharesight.com/api/"
 CLIENT_ID = os.getenv("SHARESIGHT_CLIENT_ID")
@@ -105,6 +108,33 @@ def delete_portfolio(portfolio_id):
         delete(portfolio_id)
     except Exception as e:
         click.echo(f"Error deleting portfolio: {e}", err=True)
+
+@cli.command()
+@click.argument("file", type=click.Path(exists=True))
+def read_csv(file):
+    """Generate a list of securities from CSV"""
+    rows = tools.read.read_data_from_csv(file)
+    for row in rows:
+        # Get the ticker from each row
+        ticker = row["TICKER"]
+        # Get additional fields using the get_fields function
+        additional_fields = tools.api.get_fields(ticker)
+        # Add the additional fields to the row
+        row.update(additional_fields)
+
+        # Calculate the percentage difference between the current price and the 'value' field
+        if "current_price" in row and "VALUE" in row:
+            current_price = row["current_price"]
+            value = float(row["VALUE"])
+            if value != 0:
+                percentage_diff = abs((current_price - value) / value) * 100
+            else:
+                percentage_diff = 0.0
+            row["percentage_difference"] = percentage_diff
+
+        # Print the updated row
+        print(row)
+
 
 if __name__ == "__main__":
     cli()
