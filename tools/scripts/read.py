@@ -9,3 +9,4 @@ def read_data_from_csv(file_path):
         rows = list(reader)
 
     return rows
+
