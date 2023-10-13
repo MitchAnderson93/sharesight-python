@@ -1,9 +1,9 @@
 # tools/value_score.py
 def calculate_value_score(row):
     # Define weights for each parameter (you can adjust these as needed)
-    weight_yield = 0.1
-    weight_stability = 0.1
-    weight_value = 0.8
+    weight_yield = 0.35
+    weight_stability = 0.3
+    weight_value = 0.35
 
     # Handle missing values for yield and stability
     yield_percentage = float(row["yield"]) if row["yield"] is not None else 0.0

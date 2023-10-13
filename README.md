@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 ## List all portfolios:
 ```python
-(env): $ python script.py list-portfolios
+(env): $ python cli.py list-portfolios
 Output:
 Your Portfolios:
 - Strategies (ID: 961635)

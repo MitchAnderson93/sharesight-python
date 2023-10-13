@@ -1,0 +1,143 @@
+{
+    "ticker": "NHC",
+    "PLVR": "50",
+    "value": 8.85,
+    "yield": 10.5299994,
+    "stability": 33.99,
+    "price": 5.78000020980835,
+    "sector": "Energy",
+    "value_score": 4.312249491621285,
+    "weight": 13.01
+}
+{
+    "ticker": "WHC",
+    "PLVR": "55",
+    "value": 5.93,
+    "yield": 9.9300005,
+    "stability": 13.44,
+    "price": 7.34499979019165,
+    "sector": "Energy",
+    "value_score": 4.074267999525998,
+    "weight": 10.79
+}
+{
+    "ticker": "WDS",
+    "PLVR": "75",
+    "value": 18.47,
+    "yield": 9.86,
+    "stability": 49.06,
+    "price": 37.84000015258789,
+    "sector": "Energy",
+    "value_score": 3.8088252785855885,
+    "weight": 11.43
+}
+{
+    "ticker": "FMG",
+    "PLVR": "65",
+    "value": 18.78,
+    "yield": 9.56,
+    "stability": 77.12,
+    "price": 21.084999084472656,
+    "sector": "Basic Materials",
+    "value_score": 3.7887258592594657,
+    "weight": 12.29
+}
+{
+    "ticker": "BHP",
+    "PLVR": "80",
+    "value": 42.96,
+    "yield": 8.959999999999999,
+    "stability": 90.26,
+    "price": 44.11000061035156,
+    "sector": "Basic Materials",
+    "value_score": 3.5742700813576427,
+    "weight": 8.37
+}
+{
+    "ticker": "WBC",
+    "PLVR": "80",
+    "value": 17.31,
+    "yield": 6.7,
+    "stability": 71.67,
+    "price": 21.18000030517578,
+    "sector": "Financial Services",
+    "value_score": 2.773247797422381,
+    "weight": 6.25
+}
+{
+    "ticker": "STO",
+    "PLVR": "70",
+    "value": 10.13,
+    "yield": 4.2600001999999995,
+    "stability": 25.44,
+    "price": 7.695000171661377,
+    "sector": "Energy",
+    "value_score": 2.0832830507310076,
+    "weight": 5.25
+}
+{
+    "ticker": "RIO",
+    "PLVR": "80",
+    "value": 116.91,
+    "yield": 4.9799999999999995,
+    "stability": 91.53,
+    "price": 107.75499725341797,
+    "sector": "Basic Materials",
+    "value_score": 2.0721991590588074,
+    "weight": 11.49
+}
+{
+    "ticker": "TLS",
+    "PLVR": "80",
+    "value": 5.1,
+    "yield": 4.1500002,
+    "stability": 95.81,
+    "price": 4.065000057220459,
+    "sector": "Communication Services",
+    "value_score": 1.8163615899702186,
+    "weight": 6.29
+}
+{
+    "ticker": "WES",
+    "PLVR": "80",
+    "value": 48.35,
+    "yield": 3.63,
+    "stability": 80.83,
+    "price": 49.4900016784668,
+    "sector": "Consumer Cyclical",
+    "value_score": 1.7383353043298162,
+    "weight": 5.48
+}
+{
+    "ticker": "WOR",
+    "PLVR": "55",
+    "value": 12.3,
+    "yield": 2.9000001,
+    "stability": None,
+    "price": 17.90999984741211,
+    "sector": "Energy",
+    "value_score": 1.6034422485127184,
+    "weight": 4.84
+}
+{
+    "ticker": "CSL",
+    "PLVR": "80",
+    "value": 155.0,
+    "yield": 1.35,
+    "stability": 50.65,
+    "price": 263.1600036621094,
+    "sector": "Healthcare",
+    "value_score": 0.8679280175333433,
+    "weight": 1.89
+}
+{
+    "ticker": "LYC",
+    "PLVR": "55",
+    "value": 5.56,
+    "yield": None,
+    "stability": 0.0,
+    "price": 7.159999847412109,
+    "sector": "Basic Materials",
+    "value_score": 0.6261452583471812,
+    "weight": 2.62
+}
