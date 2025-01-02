@@ -1,5 +1,6 @@
 altair==5.0.1
 appdirs==1.4.4
+art==6.4
 attrs==23.1.0
 beautifulsoup4==4.12.2
 blinker==1.6.2

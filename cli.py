@@ -1,15 +1,13 @@
 import os
 import requests
 import click
-
+from art import text2art
 from dotenv import load_dotenv
+
 load_dotenv()
 
-# Custom tools that expand ontop of this 
-# import tools
-
-# Sharesight API endpoint
-API_BASE_URL = os.getenv("SHARESIGHT_API_BASE_PATH")#
+# Sharesight API configurations
+API_BASE_URL = os.getenv("SHARESIGHT_API_BASE_PATH")
 CLIENT_ID = os.getenv("SHARESIGHT_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SHARESIGHT_CLIENT_SECRET")
 ACCESS_TOKEN = None
@@ -57,7 +55,7 @@ def get_holdings(portfolio_id):
         raise Exception(f"Error fetching holdings: {response.status_code} {response.text}")
 
 def delete(portfolio_id):
-    """Delete a portfolio with the given ID - uses V2 legacy API endpoint"""
+    """Delete a portfolio with the given ID - uses V2 legacy API endpoint."""
     global ACCESS_TOKEN
     url = f"{API_BASE_URL}/{LEGACY_VERSION}/portfolios/{portfolio_id}"
     headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}
@@ -68,7 +66,14 @@ def delete(portfolio_id):
     else:
         raise Exception(f"Error deleting portfolio: {response.status_code} {response.text}")
 
-@click.group()
+class CustomGroup(click.Group):
+    """Custom Click Group to include ASCII art in the help message."""
+    def format_help(self, ctx, formatter):
+        ascii_art = text2art("ShareSight API CLI", font="small")
+        click.echo(ascii_art)
+        super().format_help(ctx, formatter)
+
+@click.group(cls=CustomGroup)
 def cli():
     """ShareSight Portfolio Manager CLI"""
     try:
